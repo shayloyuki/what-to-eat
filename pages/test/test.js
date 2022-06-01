@@ -12,35 +12,35 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    console.log('onLoad - 页面加载')
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady() {
-
+    console.log('onReady - 页面就绪')
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow() {
-
+    console.log('onShow - 页面显示')
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide() {
-
+    console.log('onHide - 页面隐藏')
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload() {
-
+    console.log('onUnload - 页面卸载')
   },
 
   /**
@@ -62,5 +62,12 @@ Page({
    */
   onShareAppMessage() {
 
-  }
+  },
+
+  goIndex() {
+    wx.reLaunch({
+      url: "/pages/index/index"
+    })
+  },
+
 })

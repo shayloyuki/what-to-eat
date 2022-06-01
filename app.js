@@ -1,6 +1,7 @@
 // app.js
 App({
   onLaunch() {
+    console.log('onLaunch - 小程序加载')
     // 展示本地存储能力
     const logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -13,6 +14,15 @@ App({
       }
     })
   },
+
+  onShow() {
+    console.log('onShow - 小程序显示')
+  },
+
+  onHide() {
+    console.log('onHide - 小程序隐藏')
+  },
+
   globalData: {
     userInfo: null
   }
